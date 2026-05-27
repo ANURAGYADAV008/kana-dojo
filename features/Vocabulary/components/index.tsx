@@ -10,7 +10,7 @@ import {
 import LevelSetCards from '@/shared/ui-composite/Menu/LevelSetCards';
 import useSetProgressHydration from '@/features/Progress/hooks/useSetProgress';
 import useSetProgressStore from '@/features/Progress/store/useSetProgressStore';
-import { calculateVocabularySetProgress } from '@/features/Progress/lib/setProgress';
+import { calculateVocabularySetProgressAndStars } from '@/features/Progress/lib/setProgress';
 import {
   N1VocabLength,
   N2VocabLength,
@@ -192,12 +192,22 @@ const VocabCards = () => {
   );
   const getSetProgress = useCallback(
     (items: IWord[]) =>
-      calculateVocabularySetProgress(
+      calculateVocabularySetProgressAndStars(
         items.map(item => ({
           meaningCorrect: vocabularyProgress[item.word]?.meaningCorrect ?? 0,
           readingCorrect: vocabularyProgress[item.word]?.readingCorrect ?? 0,
         })),
-      ),
+      ).progress,
+    [vocabularyProgress],
+  );
+  const getSetStars = useCallback(
+    (items: IWord[]) =>
+      calculateVocabularySetProgressAndStars(
+        items.map(item => ({
+          meaningCorrect: vocabularyProgress[item.word]?.meaningCorrect ?? 0,
+          readingCorrect: vocabularyProgress[item.word]?.readingCorrect ?? 0,
+        })),
+      ).stars,
     [vocabularyProgress],
   );
 
@@ -220,6 +230,7 @@ const VocabCards = () => {
       setCollapsedRows={setCollapsedRows}
       renderSetDictionary={items => <VocabSetDictionary words={items} />}
       getSetProgress={getSetProgress}
+      getSetStars={getSetStars}
       loadingText='Loading vocabulary sets...'
       activeSubunitRange={activeSubunitRange}
       collapseScopeKey={collapsedRowsKey}
