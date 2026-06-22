@@ -322,10 +322,17 @@
   "backgroundColor": "oklch(94.0% 0.010 95.0 / 1)",
   "mainColor": "oklch(45.0% 0.075 65.0 / 1)",
   "secondaryColor": "oklch(60.0% 0.045 30.0 / 1)"
-}
+  },
+  {
   "id": "tsuyu-drizzle",
   "backgroundColor": "oklch(22.0% 0.015 250.0 / 1)",
   "mainColor": "oklch(72.0% 0.105 230.0 / 1)",
   "secondaryColor": "oklch(78.0% 0.025 260.0 / 1)"
-  }
+  },
+  {
+  "id": "festival-yatai",
+  "backgroundColor": "oklch(19.0% 0.030 35.0 / 1)",
+  "mainColor": "oklch(78.0% 0.185 45.0 / 1)",
+  "secondaryColor": "oklch(88.0% 0.115 95.0 / 1)"
+}
 ]
