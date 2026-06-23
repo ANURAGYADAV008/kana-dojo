@@ -358,5 +358,11 @@
     "backgroundColor": "oklch(92.0% 0.015 210.0 / 1)",
     "mainColor": "oklch(60.0% 0.130 215.0 / 1)",
     "secondaryColor": "oklch(85.0% 0.155 95.0 / 1)"
-  }
+  },
+  {
+  "id": 'yuzu-mist',
+  "backgroundColor": "oklch(92.0% 0.025 95.0 / 1)",
+  "mainColor": "oklch(70.0% 0.145 85.0 / 1)",
+  "secondaryColor": "oklch(62.0% 0.090 70.0 / 1)"
+}
 ]
