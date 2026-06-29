@@ -12,10 +12,10 @@
     "file": "docs/community-notes/contribution-notes-2.md",
     "position": "top",
     "text": "> Community note: this page intentionally accepts tiny formatting-safe edits.",
-    "issued": true,
+    "issued": false,
     "completed": false,
-    "completedBy": "prakhargaba007",
-    "completedPR": 22348
+    "completedBy": "Rezapurian",
+    "completedPR": 22385
   },
   {
     "id": 3,
