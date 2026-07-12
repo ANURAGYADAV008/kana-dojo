@@ -410,6 +410,18 @@
   "difficulty": "easy",
   "answers": ["Sakura", "Ume", "Momiji", "Kiku"],
   "correctIndex": 0
+},
+{
+  "question": "What is the name of the traditional Japanese summer festival featuring fireworks? (Community variation 8)",
+  "difficulty": "easy",
+  "answers": [
+    "Seijin Shiki",
+    "Hanabi Taikai",
+    "Setsubun",
+    "Obon"
+  ],
+  "correctIndex": 1
 }
+  
 ]
 
